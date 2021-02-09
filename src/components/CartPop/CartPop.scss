@@ -1,0 +1,105 @@
+@import './../App';
+
+.navbar__cart:hover + .cartpop {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.cartpop:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cartpop:not(:hover) {
+    opacity: 0;
+    transition-delay: 1.2s;
+}
+
+.cartpop {
+    background-color: $color-white;
+    height: auto;
+    position: absolute;
+    right: 11%;
+    top: 14%;
+    overflow-y: scroll;
+    height: 18rem;
+    visibility: hidden;
+    opacity: 0;
+    border: 2px solid $color-grey;
+    & > body {
+        margin: 0;
+    }
+
+    &__empty {
+        height: 12rem;
+        font-size: $font-size-large;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+
+    &__header {
+        color: $color-white;
+        background-color: $color-blue-light;
+        height: 5rem;
+        width: 37rem;
+        text-transform: uppercase;
+        font-size: $font-size-large;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__product {
+        width: 35rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .5rem;
+    }
+    &__price {
+        text-align: center;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        height: 5rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn {
+        background-color: $color-white;
+        color: $color-red;
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        font-size: $font-size-large;
+        font-weight: 900;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+            transition: all .3s;
+        }
+    }
+    &__btn-all {
+        color: $color-white;
+        background-color: $color-grey-light;
+        height: 3rem;
+        width: 100%;
+        font-size: $font-size-larger;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+    }
+}

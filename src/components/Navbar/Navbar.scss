@@ -1,0 +1,146 @@
+@import "../App.scss";
+
+.navbar {
+    &__icon {
+        height: 3rem;
+    }
+    &__login {
+        margin-left: -4rem;
+    }
+
+    &__first--row {
+        background-color: $color-grey-dark;
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-box {
+            color: $color-white;
+            font-size: $font-size-smaller;
+            font-weight: 300;
+            text-decoration: none;
+            width: 14rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;   
+        }
+    }
+
+    &__logo {
+        color: $color-grey;
+        font-size: $font-size-ultra;
+        font-weight: 400;
+        text-transform: uppercase;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        
+        &-img {
+            margin-left: -8rem;
+           
+        }
+    }
+
+    &__second--row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-box {
+        height: 10rem;
+        width: 50rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        }
+    }
+    &__cart {
+        position: relative;
+        background-color: $color-blue-light;
+        height: 5.5rem;
+        width: 20rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        
+        & > h4 {
+            color: $color-white;
+            font-size: $font-size-larger;
+            text-transform: uppercase;
+            width: 15rem;
+            text-align: center;
+        }
+        &-box {
+            background-color: $color-blue;
+            height: 5.5rem;
+            width: 5.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-icon {
+            height: 3.5rem;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        border: 1px solid $color-grey-light;
+        margin-right: 5rem;
+
+        &-box {
+            background-color: $color-grey-light;
+            height: 5.1rem;
+            width: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-icon {
+            height: 3rem;
+            cursor: pointer;
+        }
+
+        &-input {
+            color: $color-grey-light;
+            width: 35rem;
+            height: 5rem;
+            border: none;
+            outline: none;
+            padding: 1rem;
+        }
+    }
+
+    &__thirt--row {
+        background-color: $color-blue;
+        display: flex;
+        align-items: center;
+        &-box {
+            height: 7rem;
+            width: 70rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 15rem;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+        font-size: $font-size-larger;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-grey-light;
+            
+        }
+    }
+}
+
